@@ -1,0 +1,70 @@
+/* GENEL HEADER */
+.header-container {
+    font-family: Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+   
+   
+}
+
+/* LOGO ALANI */
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.logo-area p {
+    /* font-weight: bold; */
+    font-size: 18px;
+}
+
+/* NAVBAR */
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #05c31e; /* senin kullandığın green */
+}
+
+/* RIGHT SIDE */
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.header-right input {
+    padding: 6px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+}
+
+.header-right input:focus {
+    border-color: #05c31e;
+}
+
+
+.basket-icon {
+  font-size: 28px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.basket-icon:hover {
+    color: #05c31e; 
+  transform: scale(1.1);
+}

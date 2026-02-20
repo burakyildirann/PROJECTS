@@ -1,0 +1,81 @@
+.product-card {
+  width: 260px;
+  background: #ffffff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.product-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+}
+
+/* IMAGE */
+.card-image {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 15px;
+  transition: 0.3s;
+}
+
+.product-card:hover .card-image img {
+  transform: scale(1.05);
+}
+
+/* BODY */
+.card-body {
+  padding: 15px;
+  flex-grow: 1;
+}
+
+.card-title {
+  font-size: 16px;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.card-desc {
+  font-size: 13px;
+  color: #666;
+  height: 40px;
+  overflow: hidden;
+}
+
+/* FOOTER */
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+}
+
+.card-price {
+  font-weight: bold;
+  font-size: 16px;
+  color: #05c31e; /* Senin header yeşiline uyumlu */
+}
+
+.card-btn {
+  background: #05c31e;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.card-btn:hover {
+  background: #049d17;
+}
