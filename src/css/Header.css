@@ -19,7 +19,10 @@
 
 .logo-area p {
     /* font-weight: bold; */
-    font-size: 18px;
+    font-size: 25px;
+}
+.logo-area p:hover{
+    color:#05c31e
 }
 
 /* NAVBAR */
@@ -32,6 +35,7 @@ nav a {
     text-decoration: none;
     color: black;
     font-weight: 500;
+    font-size: 25px;
     transition: 0.3s;
 }
 

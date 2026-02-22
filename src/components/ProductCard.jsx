@@ -18,7 +18,7 @@ function ProductCard({ product }) {
 
       <div className="card-footer">
         <span className="card-price">{price} ₺</span>
-        <button className="card-btn">Sepete Ekle</button>
+        <button className="card-btn">Detayına Git</button>
       </div>
 
     </div>

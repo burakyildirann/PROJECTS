@@ -6,6 +6,7 @@ import Badge from '@mui/material/Badge';
 import { useNavigate } from 'react-router-dom';
 import '../css/Header.css';
 import { BiPointer } from 'react-icons/bi';
+import Image from '../images/Image.png';
 function Header() {
   
   const navigate = useNavigate();
@@ -13,12 +14,12 @@ function Header() {
 
     <div className='header-container'>
       <div className="logo-area">
-        <img src={logo} width={25} height={25} />
+        <img src={Image} width={70} height={70} />
         <p 
         onClick={() => navigate("/")} 
         style={{ cursor: "pointer" }}
       >
-        BURAK A.Ş
+        BURAK A.Ş 
       </p>
       </div>
 
