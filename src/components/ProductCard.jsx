@@ -1,8 +1,10 @@
 import '../css/ProductCard.css';
+import { Button } from "@mui/material";
+import { Link } from "react-router-dom";
 
 function ProductCard({ product }) {
 
-  const { image, title, description, price } = product;
+  const { image, title, description, price, id } = product;
 
   return (
     <div className="product-card">
@@ -18,7 +20,15 @@ function ProductCard({ product }) {
 
       <div className="card-footer">
         <span className="card-price">{price} ₺</span>
-        <button className="card-btn">Detayına Git</button>
+
+        <Button 
+          component={Link} 
+          to={`/product/${id}`}
+          variant="contained"
+        >
+          Detaya Git
+        </Button>
+
       </div>
 
     </div>
