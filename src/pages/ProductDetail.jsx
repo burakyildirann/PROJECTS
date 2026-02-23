@@ -1,33 +1,37 @@
-import { useSelector } from "react-redux";
-import { useParams } from "react-router-dom";
+import React, { use } from 'react'
+import { useSelector } from 'react-redux'
+import { useParams } from 'react-router-dom';
+
 
 function ProductDetail() {
 
-  const { id } = useParams();
+  const {id} = useParams();
 
-  const { products, loading } = useSelector((state) => state.product);
+  const {products, loading} = useSelector((state)=>state.product);
 
-  const product = products.find(product=> product.id === Number(id));
+  const product = products.find(product=>product.id === Number(id));
 
-  if (loading) {
+  if(loading){
     return <h2>Loading...</h2>;
   }
 
-  if (!product) {
-    return <h2>Product not found</h2>;
+  if(!product){
+    return <h2>Product Not Found</h2>;
   }
-   return (
+
+
+
+  return (
     <div>
-      <h1>{product.title}</h1>
-      <img src={product.image} width="200" />
+      <img src={product.image} width="200"/>
+            <h1>{product.title}</h1>
       <p>{product.description}</p>
-      <h3>{product.price} ₺</h3>
+      <h3>{product.price}₺</h3>
       <div>
         <button>sepete ekle</button>
       </div>
     </div>
-    
-  );
+  )
 }
 
 export default ProductDetail;
